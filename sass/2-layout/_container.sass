@@ -9,6 +9,7 @@
     display: flex
     flex-direction: row
     border-radius: 5px
+    position: relative
 
     &__banner
         background-image: url(../img/drawers.jpg)
@@ -65,6 +66,29 @@
                     small
                         color: variables.$cinza-claro
 
+    &__social
+        background-color: variables.$cinza-escuro
+        width: 250px
+        position: absolute
+        border-radius: 15px
+        top: 190px
+        right: -65px
+        display: none
+
+        ul
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            padding: 1rem
+
+            li
+                small
+                    color: variables.$cinza-claro2
+
+
+.ativo
+    display: block
+    transition: .5s
 
         
 
