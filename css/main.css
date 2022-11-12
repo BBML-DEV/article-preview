@@ -21,6 +21,7 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
+  background-color: #ECF2F8;
 }
 
 a {
@@ -48,6 +49,80 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+.container {
+  margin: 250px auto;
+  height: 350px;
+  background-color: #FFF;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+.container__banner {
+  background-image: url(../img/drawers.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+}
+.container__content {
+  width: 60%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.container__content--title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #48556A;
+  width: 100%;
+  padding-bottom: 1.3rem;
+}
+.container__content--text {
+  color: #6D7F97;
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.container__content--perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__content--perfil .info {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__content--perfil .info .img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+.container__content--perfil .info .name h3 {
+  font-weight: bold;
+  color: #48556A;
+  padding-bottom: 0.7rem;
+}
+.container__content--perfil .info .name small {
+  color: #9EAFC2;
+}
+
+.btn {
+  background-color: #6D7F97;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.btn i {
+  color: #FFF;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,70 @@
+@use "../1-base/variables"
+
+
+.container
+    margin: 250px auto
+    height: 350px
+    background-color: variables.$branco
+    width: variables.$desktop
+    display: flex
+    flex-direction: row
+    border-radius: 5px
+
+    &__banner
+        background-image: url(../img/drawers.jpg)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 40%
+        height: 100%
+        border-radius: 5px 0px 0px 5px
+
+    &__content
+        width: 60%
+        padding: 2.5rem
+        display: flex
+        flex-direction: column
+
+        &--title
+            font-weight: 700
+            font-size: 1.4rem
+            line-height: 1.8rem
+            color: variables.$cinza-escuro
+            width: 100%
+            padding-bottom: 1.3rem
+
+        &--text
+            color: variables.$cinza-medio
+            line-height: 1.5rem
+            padding-bottom: 1.5rem
+
+        &--perfil
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+
+            .info
+                display: flex
+                width: 220px
+                justify-content: space-between
+                align-items: center
+
+                .img
+                    img
+                        width: 60px
+                        height: 60px
+                        border-radius: 60px
+
+                .name
+                    h3
+                        font-weight: bold
+                        color: variables.$cinza-escuro
+                        padding-bottom: .7rem
+
+                    small
+                        color: variables.$cinza-claro
+
+
+        
+
